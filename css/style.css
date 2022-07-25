@@ -13,14 +13,14 @@
       "main main main main"
       "main main main main"
       "footer footer footer footer";
-      background-color: pink;
+      background-color: #f6dee1;
       color: black;
   }
   
 .header { 
     grid-area: header;
-    background-color: violet;
-    background-image: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);;
+    background-color: #f6dee1;
+    background-image: linear-gradient(to bottom, pink, #f6dee1);
     
     
 }
@@ -46,26 +46,35 @@
 .nav1 li {
     list-style: none;
     margin: 10px;
+    font-family:'Courier New', Courier, monospace;
     }
 .nav1 li:hover{
-    background-color: orange;
-    transition: 1s;
-    transform: scale(1.5);
-    animation-name: CambioColor;
+    transition: 0.5s;
+    transform: scale(1.1);
+    animation: cambioColor;
     animation-duration: 3s;
-    animation-iteration-count: infinite;
+    
 
 }
 .nav1 a{
     text-decoration: none;
     color: black;
 }
+
+
+
+
+
+
+
 /* MAIN */
  
 .main {
     grid-area: main; 
-    background-color: aqua;
+    background-color: pink;
     height: 75vh;
+    margin: 30px;
+    
     }
    
     .servicios a{
@@ -90,49 +99,42 @@
     }
     
     .pestañas{
-        background-image: url(../img/09e62e44028da53a65c112767eca4397.jpg);
+        background-image: url(../img/unnamed\ \(9\).jpg);
         background-size: 100%;
-        
+       
          
     }
     .pestañas:hover{
-        transition: 1s;
-        transform: scale(1.5)
+        transition: 2s;
+        transform: scale(1.02);
     }
-    
     .cejas{
-        background-image: url(../img/09e62e44028da53a65c112767eca4397.jpg);
+        background-image: url(../img/unnamed.jpg);
         background-size: 100%;
     }
     .cejas:hover{
-            transition: 1s;
-            transform: scale(1.5)
+        transition: 2s;
+        transform: scale(1.02);
+
     }
     .makeup{
         background-image: url(../img/09e62e44028da53a65c112767eca4397.jpg);
         background-size: 100%;
     }
     .makeup:hover{
-        transition: 1s;
-        transform: scale(1.5)
+        transition: 2s;
+        transform: scale(1.02);
+
     }
     .tendencias{
         background-image: url(../img/09e62e44028da53a65c112767eca4397.jpg);
         background-size: 100%;
     }
     .tendencias:hover{
-        transition: 1s;
-        transform: scale(1.5)
-    }
-    @keyframes CambioColor{
-        0%{
-            background-color: pink;
-      }
-      50%{
-        background-color: aqua;
-      }
-   }
+        transition: 2s;
+        transform: scale(1.02);
 
+    }
 
 
 
@@ -143,24 +145,70 @@
 
   .footer {
      grid-area: footer;
-     background-image: radial-gradient(circle, rgb(181, 63, 251) 10%, rgba(252,70,197,0) 100%);
+     background-color: #f6dee1;
+     background-image: linear-gradient(to top, pink, #f6dee1);
+    
      }
  .footer1{
     display: flex;
      align-content: stretch;
-     justify-content: space-around;
+     justify-content: space-between;
      list-style: none;
      height: 50px;
- 
-     
+     flex-direction: column;
+    align-items: stretch;   
  }    
-.footer1 li:hover{
-    background-color: orange;
-    transform: skew(-25deg);
-    
+.div i{
+    font-size: 1rem;
+    color: black;
+}
+.div i:hover{
+    color: antiquewhite;
 }
 
 
+
+/* QUIENES SOMOS */
+
+.fotoHermanas{
+    margin: 25px;
+    padding: 25px;
+}
+.mainqs{
+    display: flex;
+    text-align: center;
+}
+
+.quienesSomos{
+    text-align: center;
+    display: inline;
+    width: 55vw;
+    height: 75vh;
+    margin: 25px;
+    padding: 25px;
+}
+
+
+
+
+
+
+/* CONTACTO */
+
+.texto{
+    width: 500px;
+}
+
+
+/* ANIMACIONES */
+@keyframes cambioColor{
+    0%{
+        background-color: rgba(255, 0, 0, 0.281);
+    }
+    100%{
+        background-color: #f6dee1;
+    }
+}
 
 
 
